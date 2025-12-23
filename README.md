@@ -66,7 +66,3 @@ Most required libraries (TensorFlow, NumPy, Pandas, Scikit-learn) are pre-instal
 If needed, additional dependencies can be installed using:
 ```bash
 pip install -r requirements.txt
-
-
-
-

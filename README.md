@@ -123,9 +123,6 @@ weighted avg       0.40      0.71      0.44      1650
 
 ## 6. Evaluation Summary
 
-```markdown
-## 6. Evaluation Summary
-
 The DenseNet121 with improved pipeline achieved the best overall Micro F1 score among the evaluated models, indicating a good balance between precision and recall on the multi-label validation dataset.
 
 Although certain labels (e.g., AMD (A) and Glaucoma (G)) exhibited lower per-label F1 scores due to class imbalance and visual similarity with other conditions, the improved DenseNet121 model demonstrated robustness in recognizing common disease patterns.

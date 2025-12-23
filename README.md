@@ -58,7 +58,6 @@ The following models are evaluated:
 ---
 
 ## 4. How to Run the Project
-
 This project is designed to be executed using **Google Colab**.
 
 ### A. Environment Setup
@@ -122,12 +121,6 @@ weighted avg       0.40      0.71      0.44      1650
 ---
 
 ## 6. Evaluation Summary
-
-The DenseNet121 with improved pipeline achieved the best overall Micro F1 score among the evaluated models, indicating a good balance between precision and recall on the multi-label validation dataset.
-
-Although certain labels (e.g., AMD (A) and Glaucoma (G)) exhibited lower per-label F1 scores due to class imbalance and visual similarity with other conditions, the improved DenseNet121 model demonstrated robustness in recognizing common disease patterns.
-
-This section provides a concise overview of the model comparison results and highlights the performance trade-offs observed during evaluation. More detailed evaluation charts and per-class analyses are available within the project notebook (`deep_learning_retinal_disease.ipynb`).
-
+The DenseNet121 model with the improved training strategy achieved the highest overall Micro F1 score among all evaluated models, indicating a strong balance between precision and recall on the multi-label validation dataset. Some disease labels, such as AMD (A) and Glaucoma (G), had lower F1 scores, likely due to class imbalance and visual similarity with other conditions. Despite this, the improved DenseNet121 model showed reliable performance in identifying common disease patterns. This section provides an overview of the model comparison results and highlights important performance observations. Detailed per-class evaluation results and training curves can be found in the project notebook (`deep_learning_retinal_disease.ipynb`).
 
 

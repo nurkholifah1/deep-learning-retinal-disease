@@ -119,5 +119,18 @@ weighted avg       0.40      0.71      0.44      1650
  samples avg       0.37      0.72      0.47      1650
 ```
 
+---
+
+## 6. Evaluation Summary
+
+```markdown
+## 6. Evaluation Summary
+
+The DenseNet121 with improved pipeline achieved the best overall Micro F1 score among the evaluated models, indicating a good balance between precision and recall on the multi-label validation dataset.
+
+Although certain labels (e.g., AMD (A) and Glaucoma (G)) exhibited lower per-label F1 scores due to class imbalance and visual similarity with other conditions, the improved DenseNet121 model demonstrated robustness in recognizing common disease patterns.
+
+This section provides a concise overview of the model comparison results and highlights the performance trade-offs observed during evaluation. More detailed evaluation charts and per-class analyses are available within the project notebook (`deep_learning_retinal_disease.ipynb`).
+
 
 

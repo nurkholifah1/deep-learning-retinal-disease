@@ -62,7 +62,46 @@ The following models are evaluated:
 This project is designed to be executed using **Google Colab**.
 
 ### A. Environment Setup
-Most required libraries (TensorFlow, NumPy, Pandas, Scikit-learn) are pre-installed in Google Colab.
-If needed, additional dependencies can be installed using:
+
+Most required libraries (TensorFlow, NumPy, Pandas, Scikit-learn) are pre-installed in Google Colab.  
+If additional dependencies are needed, they can be installed using:
+
 ```bash
 pip install -r requirements.txt
+```
+
+### B. Running the Experiments
+To run the project:
+1. Open the notebook deep_learning_retinal_disease.ipynb in Google Colab.
+2. Upload or mount your dataset (e.g., via Google Drive).
+3. Ensure that the file paths match the dataset structure.
+4. Run cells in order:
+  - Data loading and preprocessing
+  - Baseline and transfer learning model training
+  - Evaluation and metric computation
+  - Threshold optimization and final comparisons
+The notebook contains all steps from data preparation to evaluation.
+
+---
+
+## 5. How to Run the Project
+```markdown
+### Performance Comparison
+
+The table below summarizes the evaluation results of all models on the validation dataset:
+
+| Model                | Micro Precision | Micro Recall | Micro F1 |
+|----------------------|-----------------|--------------|----------|
+| Baseline CNN         | 0.2275          | 0.1376       | 0.2275   |
+| VGG16                | 0.6561          | 0.1376       | 0.2275   |
+| ResNet50             | 0.4790          | 0.1036       | 0.1704   |
+| DenseNet121          | 0.3587          | 0.7436       | 0.4839   |
+| DenseNet121 Improve  | 0.3590          | 0.7230       | 0.4798   |
+
+*Note: Micro metrics provide an overall measure across all labels.*
+
+### Per-Label Performance (DenseNet121 Improve)
+
+
+
+

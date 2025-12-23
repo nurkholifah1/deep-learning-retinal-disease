@@ -84,7 +84,7 @@ The notebook contains all steps from data preparation to evaluation.
 
 ---
 
-## 5. How to Run the Project
+## 5. Model Outputs
 ```markdown
 ### Performance Comparison
 
@@ -92,16 +92,32 @@ The table below summarizes the evaluation results of all models on the validatio
 
 | Model                | Micro Precision | Micro Recall | Micro F1 |
 |----------------------|-----------------|--------------|----------|
-| Baseline CNN         | 0.2275          | 0.1376       | 0.2275   |
-| VGG16                | 0.6561          | 0.1376       | 0.2275   |
-| ResNet50             | 0.4790          | 0.1036       | 0.1704   |
-| DenseNet121          | 0.3587          | 0.7436       | 0.4839   |
-| DenseNet121 Improve  | 0.3590          | 0.7230       | 0.4798   |
+| Baseline CNN         | 0.5261          | 0.0854       | 0.1470   |
+| VGG16                | 0.7015          | 0.1139       | 0.1960   |
+| ResNet50             | 0.5340          | 0.1000       | 0.1684   |
+| DenseNet121          | 0.6377          | 0.2091       | 0.3149   |
+| DenseNet121 Improve  | 0.3546          | 0.7073       | 0.4724   |
 
 *Note: Micro metrics provide an overall measure across all labels.*
 
 ### Per-Label Performance (DenseNet121 Improve)
 
+                precision    recall  f1-score   support
+
+           N       0.33      0.92      0.49       438
+           D       0.35      0.92      0.50       442
+           G       1.00      0.04      0.07        85
+           C       0.74      0.37      0.50        91
+           A       0.00      0.00      0.00        61
+           H       0.43      0.07      0.11        46
+           M       0.69      0.58      0.63        69
+           O       0.35      0.66      0.45       418
+
+   micro avg       0.35      0.71      0.47      1650
+   macro avg       0.49      0.44      0.34      1650
+weighted avg       0.40      0.71      0.44      1650
+ samples avg       0.37      0.72      0.47      1650
+```
 
 
 

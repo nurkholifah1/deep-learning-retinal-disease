@@ -67,3 +67,16 @@ If needed, additional dependencies can be installed using:
 ```bash
 pip install -r requirements.txt
 
+---
+
+## 5. Model Outputs
+<img width="542" height="198" alt="image" src="https://github.com/user-attachments/assets/1e1535c7-8600-4510-8867-14a1fb3ad8a0" />
+
+---
+
+## 6. Evaluation Summary
+The DenseNet121 with improved pipeline achieved the best Micro F1 score among the evaluated models.
+
+
+
+
